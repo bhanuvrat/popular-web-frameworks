@@ -22,7 +22,7 @@ def main():
             url="https://api.github.com/repos/%s" % framework['repo_name'],
             headers=headers)
         response_dict = r.json()
-        relevant_subset = {k: response_dict[k] for k in relevant_keys}
+        relevant_subset = {k: response_dict.get(k) for k in relevant_keys}
         final.append(relevant_subset)
 
     data = json.dumps({'files': {'frameworks.json': {
