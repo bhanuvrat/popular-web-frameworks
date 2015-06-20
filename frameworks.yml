@@ -62,5 +62,5 @@
 - name: Bottle
   language: Python
   hosted_on: github
-  repo_name: bottlepy/bottel
+  repo_name: bottlepy/bottle
   homepage: "http://bottlepy.org"
