@@ -1,0 +1,60 @@
+
+- name: Django
+  language: Python
+  hosted_on: github
+  repo_name: django/django
+  homepage: "http://djangoproject.com"
+
+- name: Flask
+  language: Python
+  hosted_on: github
+  repo_name: mitsuhiko/flask
+  homepage: "http://flask.pocoo.org"
+
+- name: Pyramid
+  language: Python
+  hosted_on: github
+  repo_name: Pylons/pyramid
+  homepage: "http://www.pylonsproject.org/"
+
+- name: Falcon
+  language: Python
+  hosted_on: github
+  repo_name: falconry/falcon
+  homepage: "http://falconframework.org/"
+
+- name: web2py
+  language: Python
+  hosted_on: github
+  repo_name: web2py/web2py
+  homepage: "http://www.web2py.com/"
+
+- name: Rails
+  language: Ruby
+  hosted_on: github
+  repo_name: rails/rails
+  homepage: "http://rubyonrails.org/"
+
+- name: Sinatra
+  language: Ruby
+  hosted_on: github
+  repo_name: sinatra/sinatra
+  homepage: "http://www.sinatrarb.com/"
+
+- name: CakePHP
+  language: PHP
+  hosted_on: github
+  repo_name: cakephp/cakephp
+  homepage: "http://cakephp.org/"
+
+- name: laravel
+  language: PHP
+  hosted_on: github
+  repo_name: laravel/laravel
+  homepage: "http://laravel.com/"
+
+- name: Zend
+  language: PHP
+  hosted_on: github
+  repo_name: zendframework/zf2
+  homepage: "http://framework.zend.com"

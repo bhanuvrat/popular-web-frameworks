@@ -1,0 +1,16 @@
+language: python
+sudo: false
+install:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+script:
+  - python update_gist.py
+
+after_success: 
+  - bash gh-pages-deploy.sh
+branches:
+  only:
+    master
+env: 
+  global:
+      secure: "lmg0kKGVLghkxiL0Dlp1SqMrCyM9TLBI8fNh8EI3c8w2iip5+LY+dgtDTSteoFGhd6ehj2R1syBVGXvZoMkAvnCYIwVA0yDAk2HacLILSf4Q3nb41oyqmpTce1B9H0vUFAUpWuQ9K0WvR4lheihCpagx1z7QjuH+8N3ZSl7LwQp6xCNbOPBG2jCcPUA6W1MCVW2CUyR5dme47qXERKoDu1l0pZrZrDjTAjsiIZmvT++tN2I3ZapbHlqRBxzafbOsyhnOv8qKezP5pcbu1l3XIejlG1JXizVSjtYr1fAiZtUjcBaztp4JYtfoBs0pxdXM4DhJTYXm1dMvzDFqrloeuEcJeq+nMgy83rGuXfo90h9tAY2qLUynoylKOcQk0t5pgh58j0dpFoqkJbqdxZGsQh42xYOW5jRdLbMAhpmiqbSw1HHfJge6OSTNydLaBwcWdYl20tTYwNIGds3T8/6DWhUoNtnFcC1YVrEb/pvFSRCd8f/fz+Rb3rN2CDf0aIS1s72VZcxy43sJr944CCSuf9/77hospvfhUcVeYflk8F2GiSa3gqQ4cy3e9rLuXdERI7dyqPcEvD1wKzBLkQPoZKCuHP0M2YoQptPx0BTEind7GNeSFchhMG70A8YorJ1b4Gj3kmnbiJj+59HDpMnzIPynZ9DWQ+J3050rMUf7AHs="

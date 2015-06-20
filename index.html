@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popular Web Frameworks</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <table id='example'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>homepage</th>
+                <th>Language</th>
+                <th>Size</th>
+                <th>Stargazers</th>
+                <th>Forks</th>
+                <th>Open Issues</th> 
+            </tr>
+        </thead>
+    </table>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').dataTable( {
+            "ajax": "https://gist.githubusercontent.com/bhanuvrat/dc1e1ec6e3a17437a150/raw/frameworks.json",
+            "columns": [
+                { "data": "name" },
+                { "data": "homepage" },
+                { "data": "language" },
+                { "data": "size"},
+                { "data": "stargazers_count" },
+                { "data": "forks_count" },
+                { "data": "open_issues_count" }
+            ]
+        } );
+    } );    
+    </script>
+
+</body>
+</html>
