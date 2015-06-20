@@ -58,3 +58,9 @@
   hosted_on: github
   repo_name: zendframework/zf2
   homepage: "http://framework.zend.com"
+
+- name: Bottle
+  language: Python
+  hosted_on: github
+  repo_name: bottlepy/bottel
+  homepage: "http://bottlepy.org"
